@@ -9,9 +9,9 @@ window.SSVP_DATA = {
   upcomingEvents: [
     {
       id: "ue-1",
-      date: "DEC 2025",
-      title: "National Council Meeting",
-      description: "Gathering of delegates from all Central Councils to discuss the roadmap for the upcoming year."
+      date: "24/05/2026",
+      title: "Blessing of ECRC and Children's Palliative care unit at EFANN",
+      description: "On 24th May 2026, the Society of St. Vincent de Paul (SSVP) celebrated a significant milestone with the blessing of the new Emergency Care and Rehabilitation Centre (ECRC) and Children's Palliative Care Unit at EFANN.",
     },
     {
       id: "ue-2",
@@ -29,10 +29,10 @@ window.SSVP_DATA = {
   articles: [
     {
       id: "art-1",
-      date: "21/10/2025",
-      title: "Meeting of the Board of the International General Council in Singapore",
-      excerpt: "From 14 to 17 October 2025, the meeting of the Board of the International General Council and the visit of the PGI took place in Singapore, bringing together representatives from different regions of the world...",
-      content: "<p>From 14 to 17 October 2025, the meeting of the Board of the International General Council and the visit of the PGI took place in Singapore, bringing together representatives from different regions of the world. The stay combined moments of institutional reflection, direct contact with local social realities, and gestures of fraternity that strengthen the Vincentian spirit and our shared mission.</p><p>From the outset, this journey aimed to reaffirm the bonds between the International General Council and the local Conferences of Singapore, recognising the value of the Vincentian fabric in Asia and sharing challenges, experiences, and a common vision for the future.</p><h4>Tuesday, 14 October: visit to St. Vincent’s Home for older persons</h4><p>This social work developed by the SSVP in Singapore welcomes older persons who meet three conditions: they have no home of their own, lack economic resources, and live in a situation of loneliness. Volunteers, in addition to providing affection and companionship, organise income-generating workshops and assist them with small day-to-day tasks. There, the young people of SSVP Singapore prepared a special musical performance for the Board, with local songs and original compositions, which became a moving gesture of welcome, and they served dinner on the premises.</p><h4>Wednesday, 15 October: Committee for the Strategic Plan and Board session</h4><p>Wednesday began with the meeting of the Committee for the revision of the SSVP Strategic Plan for the next four years, based on four points: 1) Spirituality, Vincentian identity, leadership and youth; 2) Community development and international solidarity; 3) Strengthening the IGG, governance and accountability; and 4) Digital transformation.</p>"
+      date: "24/05/2026",
+      title: "Blessing of ECRC and Children's Palliative care unit at EFANN",
+      excerpt: "On 24th May 2026, the Society of St. Vincent de Paul (SSVP) celebrated a significant milestone with the blessing of the new Emergency Care and Rehabilitation Centre (ECRC) and Children's Palliative Care Unit at EFANN.",
+      content: "<p>On 24th May 2026, the Society of St. Vincent de Paul (SSVP) celebrated a significant milestone with the blessing of the new Emergency Care and Rehabilitation Centre (ECRC) and Children's Palliative Care Unit at EFANN.</p>"
     },
     {
       id: "art-2",

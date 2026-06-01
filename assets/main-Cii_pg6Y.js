@@ -9,6 +9,14 @@
     <nav class="nav-links" id="nav-links">
       <a href="index.html">Home</a>
       <a href="about.html">About Us</a>
+      <div class="dropdown">
+        <a href="#">Projects <i class="fas fa-chevron-down"></i></a>
+        <div class="dropdown-content">
+          <a href="efann.htm">EFANN</a>
+          <a href="efann.htm">Shanti Bhavan</a>
+          <a href="efann.htm">OCK</a>
+        </div>
+      </div>
 <!--    
       <div class="dropdown">
         <a href="#">Events <i class="fas fa-chevron-down"></i></a>
@@ -38,16 +46,16 @@
         <ul class="footer-links">
           <li><a href="index.html">Home</a></li>
           <li><a href="about.html">About Us</a></li>
-          <li><a href="activities.html">Our Works</a></li>
+          <li><a href="efann.htm">Projects</a></li>
           <li><a href="contact.html">Contact</a></li>
         </ul>
       </div>
       <div class="footer-col">
         <h4>Contact Info</h4>
         <ul class="footer-links">
-          <li>SSVP National Council of India</li>
+          <li>SSVP Central Council of Bombay</li>
           <li>Mumbai, Maharashtra</li>
-          <li>Email: info@ssvpindia.in</li>
+          <li>Email: centralcouncilofbombay@gmail.com</li>
         </ul>
       </div>
     </div>
