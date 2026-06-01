@@ -9,7 +9,7 @@ window.SSVP_DATA = {
   upcomingEvents: [
     {
       id: "ue-1",
-      date: "24/05/2026",
+      date: "JAN 2027",
       title: "Blessing of ECRC and Children's Palliative care unit at EFANN",
       description: "On 24th May 2026, the Society of St. Vincent de Paul (SSVP) celebrated a significant milestone with the blessing of the new Emergency Care and Rehabilitation Centre (ECRC) and Children's Palliative Care Unit at EFANN.",
     },
