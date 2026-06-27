@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <!--<link rel="icon" type="image/svg+xml" href="vite.html" />-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Central Councils | SSVP India</title>
+    <title>Area Councils | SSVP CCB</title>
     <style>
         .region-header {
             position: relative;
@@ -46,8 +46,12 @@
             box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
         }
     </style>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
   <script type="module" crossorigin src="assets/main-Cii_pg6Y.js"></script>
   <link rel="stylesheet" crossorigin href="assets/main-DAJtn6ZA.css">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+  </body>
+
 </head>
 
 <body>
@@ -56,9 +60,9 @@
     <main>
         <section class="section" style="padding-top: 120px; background-color: var(--primary); color: white;">
             <div class="container text-center">
-                <h1>Central Councils</h1>
-                <p style="max-width: 700px; margin: 0 auto; opacity: 0.9;">The 84 regional pillars guiding our mission
-                    across India.</p>
+                <h1>Area Councils</h1>
+                <p style="max-width: 700px; margin: 0 auto; opacity: 0.9;">The 5 regional pillars guiding our mission
+                    across Mumbai and suburbs.</p>
             </div>
         </section>
 
@@ -71,113 +75,211 @@
                             <h2 style="color: var(--primary); font-size: 1.5rem; margin-bottom: 1rem;">Role & Function
                             </h2>
                             <p style="margin-bottom: 1rem; color: var(--gray);">According to the Rule of the Society,
-                                Central Councils are instituted at the <strong>Diocesan level</strong>. They are formed
-                                by grouping together Area Councils within a specific diocese.</p>
+                                Area Councils are instituted at the <strong>Deanery level</strong>. They are formed
+                                by grouping together several societies within a specific deanery.</p>
                             <p style="margin-bottom: 0; color: var(--gray);">Their primary purpose is to maintain a link
-                                between the Conferences and the National Council, representing the Society in matters of
-                                local importance and animating the activity of Area Councils and Conferences under their
+                                between the Conferences and the Central Council, representing the Society in matters of
+                                local importance and animating the activity of the Conferences under their
                                 jurisdiction.</p>
                         </div>
                         <div
                             style="background: var(--secondary); color: white; padding: 2rem; border-radius: 8px; text-align: center; min-width: 200px;">
                             <span style="font-size: 3rem; font-weight: 700; display: block; line-height: 1;">84</span>
-                            <span style="font-size: 0.9rem; opacity: 0.9;">Total Councils</span>
+                            <span style="font-size: 0.9rem; opacity: 0.9;">Total Conferences</span>
                         </div>
                     </div>
                 </div>
 
-                <!-- Andhra Pradesh & Telangana Region -->
-                <div style="margin-bottom: 4rem;">
-                    <h2 class="region-header">Andhra Pradesh & Telangana Region</h2>
-                    <div class="features-grid"
-                        style="grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 1rem;">
-                        <a href="#" class="council-btn">Hyderabad Central Council</a>
-                        <a href="#" class="council-btn">Kurnool Central Council</a>
-                        <a href="#" class="council-btn">Nellore Central Council</a>
-                        <a href="#" class="council-btn">Visakhapatnam Central Council</a>
+                <!-- Interactive Region Map/Diagram Section -->
+                <div style="background: white; padding: 2.5rem; border-radius: 12px; margin-bottom: 4rem; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05); text-align: center;">
+                    <h2 style="color: var(--primary); margin-bottom: 1rem; opacity: 0; transform: translateY(20px); transition: opacity 0.6s ease-out, transform 0.6s ease-out;" class="animate-in">Interactive Region Selector</h2>
+                    <p style="color: var(--gray); margin-bottom: 2rem;">Click a region in the interactive diagram below to view its specific Conferences.</p>
+                    
+                    <div style="max-width: 500px; margin: 0 auto; padding: 1rem;">
+                        <svg viewBox="0 0 400 450" style="width: 100%; height: auto; display: block;">
+                            <style>
+                                .map-region {
+                                    transition: all 0.3s ease;
+                                    cursor: pointer;
+                                }
+                                .map-region:hover {
+                                    filter: drop-shadow(0px 8px 12px rgba(197, 160, 89, 0.3));
+                                }
+                                .map-region:hover path {
+                                    fill: var(--secondary) !important;
+                                }
+                                .map-region:hover text {
+                                    fill: var(--primary) !important;
+                                    font-weight: 700;
+                                }
+                                .map-region text {
+                                    font-family: var(--font-main);
+                                    font-size: 13px;
+                                    font-weight: 600;
+                                    fill: white;
+                                    pointer-events: none;
+                                    text-anchor: middle;
+                                }
+                            </style>
+                            
+                            <!-- NORTHERN Mumbai -->
+                            <g class="map-region" onclick="document.getElementById('Northern-Mumbai-Region').scrollIntoView({behavior: 'smooth'});">
+                                <path d="M 80 40 L 320 40 L 300 130 L 100 130 Z" fill="#003057" stroke="#ffffff" stroke-width="2"></path>
+                                <text x="200" y="90">Northern Mumbai</text>
+                            </g>
+                            
+                            <!-- WESTERN Mumbai -->
+                            <g class="map-region" onclick="document.getElementById('region-Western-Mumbai-Region').scrollIntoView({behavior: 'smooth'});">
+                                <path d="M 50 140 L 195 140 L 175 270 L 30 270 Z" fill="#00467f" stroke="#ffffff" stroke-width="2"></path>
+                                <text x="110" y="210">Western Mumbai</text>
+                            </g>
+                            
+                            <!-- ANDHRA PRADESH & TELANGANA -->
+                            <g class="map-region" onclick="document.getElementById('region-Eastern-Mumbai-Region').scrollIntoView({behavior: 'smooth'});">
+                                <path d="M 205 140 L 350 140 L 370 270 L 185 270 Z" fill="#005a9c" stroke="#ffffff" stroke-width="2"></path>
+                                <text x="275" y="210">Eastern Mumbai</text>
+                            </g>
+                            
+                            <!-- KERALA -->
+                            <g class="map-region" onclick="document.getElementById('region-South-Mumbai-Region').scrollIntoView({behavior: 'smooth'});">
+                                <path d="M 50 280 L 195 280 L 175 410 L 100 410 Z" fill="#0077cc" stroke="#ffffff" stroke-width="2"></path>
+                                <text x="130" y="350">South Mumbai</text>
+                            </g>
+                            
+                            <!-- TAMIL NADU -->
+                            <g class="map-region" onclick="document.getElementById('region-Thane-Region').scrollIntoView({behavior: 'smooth'});">
+                                <path d="M 205 280 L 350 280 L 300 410 L 185 410 Z" fill="#008eff" stroke="#ffffff" stroke-width="2"></path>
+                                <text x="250" y="350">Thane</text>
+                            </g>
+                        </svg>
                     </div>
+                </div>
+
+                <!-- Northern Mumbai Region -->
+                <div id="Northern-Mumbai-Region" style="margin-bottom: 4rem; scroll-margin-top: 100px;">
+                    <h2 class="region-header">Northern Mumbai Region</h2>
+
+<ul class="nav nav-pills features-grid" id="pills-tab" role="tablist" style="grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 1rem;">
+  <li class="nav-item council-btn" role="presentation">
+    <button class="nav-link p-0" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">SSVP1</button>
+  </li>
+  <li class="nav-item council-btn" role="presentation">
+    <button class="nav-link p-0" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">SSVP2</button>
+  </li>
+  <li class="nav-item council-btn" role="presentation">
+    <button class="nav-link p-0" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">SSVP3</button>
+  </li>
+  <li class="nav-item council-btn" role="presentation">
+    <button class="nav-link p-0" id="pills-disabled-tab" data-bs-toggle="pill" data-bs-target="#pills-disabled" type="button" role="tab" aria-controls="pills-disabled" aria-selected="false">SSVP4</button>
+  </li>
+</ul>
+<div class="tab-content" id="pills-tabContent">
+  <div class="tab-pane fade" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">Full form of the conference, President0 and contact information</div>
+  <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">Full form of the conference, President1 and contact information</div>
+  <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab" tabindex="0">Full form of the conference, President2 and contact information</div>
+  <div class="tab-pane fade" id="pills-disabled" role="tabpanel" aria-labelledby="pills-disabled-tab" tabindex="0">Full form of the conference, President3 and contact information</div>
+</div>
+
                 </div>
 
                 <!-- Kerala Region -->
                 <div style="margin-bottom: 4rem;">
-                    <h2 class="region-header">Kerala Region</h2>
-                    <div class="features-grid"
-                        style="grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 1rem;">
-                        <a href="#" class="council-btn">Verapoly Central Council</a>
-                        <a href="#" class="council-btn">Cochin Central Council</a>
-                        <a href="#" class="council-btn">Kottapuram Central Council</a>
-                        <a href="#" class="council-btn">Alleppey Central Council</a>
-                        <a href="#" class="council-btn">Quilon Central Council</a>
-                        <a href="#" class="council-btn">Trivandrum Central Council</a>
-                        <a href="#" class="council-btn">Neyyattinkara Central Council</a>
-                        <a href="#" class="council-btn">Punalur Central Council</a>
-                        <a href="#" class="council-btn">Vijayapuram Central Council</a>
-                        <a href="#" class="council-btn">Kottar Central Council</a>
-                        <a href="#" class="council-btn">Palaghat Central Council</a>
-                        <a href="#" class="council-btn">Calicut Central Council</a>
-                        <a href="#" class="council-btn">Kannanur Central Council</a>
-                        <a href="#" class="council-btn">Mananthavady Central Council</a>
-                        <a href="#" class="council-btn">Sulthanpet Central Council</a>
-                    </div>
+                    <h2 class="region-header">Western Mumbai Region</h2>
+<ul class="nav nav-pills features-grid" id="pills-tab1" role="tablist" style="grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 1rem;">
+  <li class="nav-item council-btn" role="presentation">
+    <button class="nav-link p-0" id="pills-home-tab1" data-bs-toggle="pill" data-bs-target="#pills-home1" type="button" role="tab" aria-controls="pills-home" aria-selected="true">SSVP1</button>
+  </li>
+  <li class="nav-item council-btn" role="presentation">
+    <button class="nav-link p-0" id="pills-profile-tab1" data-bs-toggle="pill" data-bs-target="#pills-profile1" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">SSVP2</button>
+  </li>
+  <li class="nav-item council-btn" role="presentation">
+    <button class="nav-link p-0" id="pills-contact-tab1" data-bs-toggle="pill" data-bs-target="#pills-contact1" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">SSVP3</button>
+  </li>
+  <li class="nav-item council-btn" role="presentation">
+    <button class="nav-link p-0" id="pills-disabled-tab1" data-bs-toggle="pill" data-bs-target="#pills-disabled1" type="button" role="tab" aria-controls="pills-disabled" aria-selected="false">SSVP4</button>
+  </li>
+</ul>
+<div class="tab-content" id="pills-tab1Content">
+  <div class="tab-pane fade" id="pills-home1" role="tabpanel" aria-labelledby="pills-home-tab1" tabindex="0">Full form of the conference, President0 and contact information</div>
+  <div class="tab-pane fade" id="pills-profile1" role="tabpanel" aria-labelledby="pills-profile-tab1" tabindex="0">Full form of the conference, President1 and contact information</div>
+  <div class="tab-pane fade" id="pills-contact1" role="tabpanel" aria-labelledby="pills-contact-tab1" tabindex="0">Full form of the conference, President2 and contact information</div>
+  <div class="tab-pane fade" id="pills-disabled1" role="tabpanel" aria-labelledby="pills-disabled-tab1" tabindex="0">Full form of the conference, President3 and contact information</div>
+</div>
                 </div>
 
                 <!-- Tamil Nadu Region -->
                 <div style="margin-bottom: 4rem;">
-                    <h2 class="region-header">Tamil Nadu Region</h2>
-                    <div class="features-grid"
-                        style="grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 1rem;">
-                        <a href="#" class="council-btn">Madras Central Council</a>
-                        <a href="#" class="council-btn">Madurai Central Council</a>
-                        <a href="#" class="council-btn">Pondicherry Central Council</a>
-                        <a href="#" class="council-btn">Tuticorin Central Council</a>
-                        <a href="#" class="council-btn">Kumbakonam Central Council</a>
-                        <a href="#" class="council-btn">Dindigul Central Council</a>
-                        <a href="#" class="council-btn">Salem Central Council</a>
-                        <a href="#" class="council-btn">Coimbatore Central Council</a>
-                        <a href="#" class="council-btn">Ootacamund Central Council</a>
-                        <a href="#" class="council-btn">Sivagangai Central Council</a>
-                        <a href="#" class="council-btn">Tanjore Central Council</a>
-                        <a href="#" class="council-btn">Trichy Central Council</a>
-                        <a href="#" class="council-btn">Vellore Central Council</a>
-                        <a href="#" class="council-btn">Palayamkottai Central Council</a>
-                        <a href="#" class="council-btn">Kottar Central Council</a>
-                        <a href="#" class="council-btn">Kuzhithurai Central Council</a>
-                    </div>
+                    <h2 class="region-header">Eastern Mumbai Region</h2>
+<ul class="nav nav-pills features-grid" id="pills-tab2" role="tablist" style="grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 1rem;">
+  <li class="nav-item council-btn" role="presentation">
+    <button class="nav-link p-0" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">SSVP1</button>
+  </li>
+  <li class="nav-item council-btn" role="presentation">
+    <button class="nav-link p-0" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">SSVP2</button>
+  </li>
+  <li class="nav-item council-btn" role="presentation">
+    <button class="nav-link p-0" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">SSVP3</button>
+  </li>
+  <li class="nav-item council-btn" role="presentation">
+    <button class="nav-link p-0" id="pills-disabled-tab" data-bs-toggle="pill" data-bs-target="#pills-disabled" type="button" role="tab" aria-controls="pills-disabled" aria-selected="false">SSVP4</button>
+  </li>
+</ul>
+<div class="tab-content" id="pills-tab2Content">
+  <div class="tab-pane fade" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">Full form of the conference, President0 and contact information</div>
+  <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">Full form of the conference, President1 and contact information</div>
+  <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab" tabindex="0">Full form of the conference, President2 and contact information</div>
+  <div class="tab-pane fade" id="pills-disabled" role="tabpanel" aria-labelledby="pills-disabled-tab" tabindex="0">Full form of the conference, President3 and contact information</div>
+</div>
                 </div>
 
                 <!-- Western India Region -->
                 <div style="margin-bottom: 4rem;">
-                    <h2 class="region-header">Western India Region</h2>
-                    <div class="features-grid"
-                        style="grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 1rem;">
-                        <a href="#" class="council-btn">Bombay Central Council</a>
-                        <a href="#" class="council-btn">Goa Central Council</a>
-                        <a href="#" class="council-btn">Poona Central Council</a>
-                        <a href="#" class="council-btn">Vasai Central Council</a>
-                        <a href="#" class="council-btn">Bangalore Central Council</a>
-                        <a href="#" class="council-btn">Mangalore Central Council</a>
-                        <a href="#" class="council-btn">Mysore Central Council</a>
-                        <a href="#" class="council-btn">Belthangady Central Council</a>
-                        <a href="#" class="council-btn">Chikmagalur Central Council</a>
-                        <a href="#" class="council-btn">Shivamogga Central Council</a>
-                        <a href="#" class="council-btn">Karwar Central Council</a>
-                    </div>
+                    <h2 class="region-header">Southern Mumbai Region</h2>
+<ul class="nav nav-pills features-grid" id="pills-tab3" role="tablist" style="grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 1rem;">
+  <li class="nav-item council-btn" role="presentation">
+    <button class="nav-link p-0" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">SSVP1</button>
+  </li>
+  <li class="nav-item council-btn" role="presentation">
+    <button class="nav-link p-0" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">SSVP2</button>
+  </li>
+  <li class="nav-item council-btn" role="presentation">
+    <button class="nav-link p-0" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">SSVP3</button>
+  </li>
+  <li class="nav-item council-btn" role="presentation">
+    <button class="nav-link p-0" id="pills-disabled-tab" data-bs-toggle="pill" data-bs-target="#pills-disabled" type="button" role="tab" aria-controls="pills-disabled" aria-selected="false">SSVP4</button>
+  </li>
+</ul>
+<div class="tab-content" id="pills-tab3Content">
+  <div class="tab-pane fade" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">Full form of the conference, President0 and contact information</div>
+  <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">Full form of the conference, President1 and contact information</div>
+  <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab" tabindex="0">Full form of the conference, President2 and contact information</div>
+  <div class="tab-pane fade" id="pills-disabled" role="tabpanel" aria-labelledby="pills-disabled-tab" tabindex="0">Full form of the conference, President3 and contact information</div>
+</div>
                 </div>
 
                 <!-- Northern India Region -->
                 <div style="margin-bottom: 4rem;">
-                    <h2 class="region-header">Northern India Region</h2>
-                    <div class="features-grid"
-                        style="grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 1rem;">
-                        <a href="#" class="council-btn">Delhi Central Council</a>
-                        <a href="#" class="council-btn">Kolkata Central Council</a>
-                        <a href="#" class="council-btn">Ranchi Central Council</a>
-                        <a href="#" class="council-btn">Jalandhar Central Council</a>
-                        <a href="#" class="council-btn">Shillong Central Council</a>
-                        <a href="#" class="council-btn">Faridabad Central Council</a>
-                        <a href="#" class="council-btn">Buxar Central Council</a>
-                        <a href="#" class="council-btn">Sambalpur Central Council</a>
-                    </div>
+                    <h2 class="region-header">Thane Region</h2>
+<ul class="nav nav-pills features-grid" id="pills-tab4" role="tablist" style="grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 1rem;">
+  <li class="nav-item council-btn" role="presentation">
+    <button class="nav-link p-0" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">SSVP1</button>
+  </li>
+  <li class="nav-item council-btn" role="presentation">
+    <button class="nav-link p-0" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">SSVP2</button>
+  </li>
+  <li class="nav-item council-btn" role="presentation">
+    <button class="nav-link p-0" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">SSVP3</button>
+  </li>
+  <li class="nav-item council-btn" role="presentation">
+    <button class="nav-link p-0" id="pills-disabled-tab" data-bs-toggle="pill" data-bs-target="#pills-disabled" type="button" role="tab" aria-controls="pills-disabled" aria-selected="false">SSVP4</button>
+  </li>
+</ul>
+<div class="tab-content" id="pills-tab4Content">
+  <div class="tab-pane fade" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">Full form of the conference, President0 and contact information</div>
+  <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">Full form of the conference, President1 and contact information</div>
+  <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab" tabindex="0">Full form of the conference, President2 and contact information</div>
+  <div class="tab-pane fade" id="pills-disabled" role="tabpanel" aria-labelledby="pills-disabled-tab" tabindex="0">Full form of the conference, President3 and contact information</div>
+</div>
                 </div>
 
             </div>
