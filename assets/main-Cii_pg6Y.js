@@ -1,20 +1,20 @@
 (function(){const a=document.createElement("link").relList;if(a&&a.supports&&a.supports("modulepreload"))return;for(const t of document.querySelectorAll('link[rel="modulepreload"]'))s(t);new MutationObserver(t=>{for(const o of t)if(o.type==="childList")for(const c of o.addedNodes)c.tagName==="LINK"&&c.rel==="modulepreload"&&s(c)}).observe(document,{childList:!0,subtree:!0});function l(t){const o={};return t.integrity&&(o.integrity=t.integrity),t.referrerPolicy&&(o.referrerPolicy=t.referrerPolicy),t.crossOrigin==="use-credentials"?o.credentials="include":t.crossOrigin==="anonymous"?o.credentials="omit":o.credentials="same-origin",o}function s(t){if(t.ep)return;t.ep=!0;const o=l(t);fetch(t.href,o)}})();const p=`
   <div class="container nav-container">
-    <a href="index.html" class="logo">
-      <img src="images/logo.png" alt="SSVP Logo" style="height: 50px;">
+    <a href="./index.html" class="logo">
+      <img src="./images/logo.png" alt="SSVP Logo" style="height: 50px;">
     </a>
     <button class="menu-toggle" id="menu-toggle">
       <i class="fas fa-bars">☰</i>
     </button>
     <nav class="nav-links" id="nav-links">
-      <a href="index.html">Home</a>
-      <a href="about.html">About Us</a>
+      <a href="./index.html">Home</a>
+      <a href="./about.html">About Us</a>
       <div class="dropdown">
-        <a href="#">Projects <i class="fas fa-chevron-down"></i></a>
+        <a href="./projects.html">Projects <i class="fas fa-chevron-down"></i></a>
         <div class="dropdown-content">
-          <a href="efann.htm">EFANN</a>
-          <a href="efann.htm">Shanti Bhavan</a>
-          <a href="efann.htm">OCK</a>
+          <a href="./efann.html">EFANN</a>
+          <a href="./shanti_bhavan.html">Shanti Bhavan</a>
+          <a href="./ock.html">OCK</a>
         </div>
       </div>
 <!--    
@@ -44,10 +44,10 @@
       <div class="footer-col">
         <h4>Quick Links</h4>
         <ul class="footer-links">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About Us</a></li>
-          <li><a href="efann.htm">Projects</a></li>
-          <li><a href="contact.html">Contact</a></li>
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./about.html">About Us</a></li>
+          <li><a href="./projects.htm">Projects</a></li>
+          <li><a href="./contact.html">Contact</a></li>
         </ul>
       </div>
       <div class="footer-col">
