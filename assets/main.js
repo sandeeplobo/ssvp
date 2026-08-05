@@ -56,11 +56,12 @@
           <li>SSVP Central Council of Bombay</li>
           <li>Mumbai, Maharashtra</li>
           <li>Email: centralcouncilofbombay@gmail.com</li>
+          <li>Website Feedback/Suggestions: <br /><a href="mailto:website@centralcouncilofbombay.org">website@centralcouncilofbombay.org</a></li>
         </ul>
       </div>
     </div>
     <div class="footer-bottom">
-      <p>&copy; ${new Date().getFullYear()} Society of St. Vincent de Paul, India. All Rights Reserved.</p>
+      <p>&copy; ${new Date().getFullYear()} Society of St. Vincent de Paul, Central Council of Bombay. All Rights Reserved.</p>
     </div>
   </div>
 `;document.addEventListener("DOMContentLoaded",()=>{const r=document.getElementById("header");r&&(r.innerHTML=p,r.classList.add("navbar"));const a=document.getElementById("footer");a&&(a.innerHTML=v,a.classList.add("footer"));const l=document.getElementById("menu-toggle"),s=document.getElementById("nav-links");l&&s&&l.addEventListener("click",()=>{s.classList.toggle("active")}),document.querySelectorAll(".dropdown").forEach(e=>{e.querySelector("a").addEventListener("click",d=>{if(window.innerWidth<=768){d.preventDefault();const i=e.querySelector(".dropdown-content"),f=i.style.display==="block";document.querySelectorAll(".dropdown-content").forEach(m=>m.style.display="none"),i.style.display=f?"none":"block",i.style.position=f?"absolute":"static",i.style.boxShadow=f?"0 8px 16px rgba(0,0,0,0.1)":"none",i.style.width="100%",i.style.textAlign="center"}})});const o=window.location.pathname;document.querySelectorAll(".nav-links a").forEach(e=>{const n=e.getAttribute("href");if(n===o||o==="/"&&n==="/index.html"||o.endsWith(n)&&n!=="/"){e.classList.add("active");const d=e.closest(".dropdown");d&&d.querySelector("a").classList.add("active")}}),document.querySelectorAll(".news-item .read-more-btn").forEach(e=>{e.addEventListener("click",()=>{const n=e.closest(".news-item");n.classList.toggle("expanded"),e.innerHTML=n.classList.contains("expanded")?'Read Less <i class="fas fa-chevron-up"></i>':'Read More <i class="fas fa-chevron-right"></i>'})});const h=new IntersectionObserver(e=>{e.forEach(n=>{n.isIntersecting&&(n.target.classList.add("animate-in"),h.unobserve(n.target))})},{threshold:.1});document.querySelectorAll(".card, .stat-card, h2").forEach(e=>{e.style.opacity="0",e.style.transform="translateY(20px)",e.style.transition="opacity 0.6s ease-out, transform 0.6s ease-out",h.observe(e)});const u=document.createElement("style");u.innerHTML=`
