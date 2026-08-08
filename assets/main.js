@@ -4,7 +4,7 @@
       <img src="./images/logo.png" alt="SSVP Logo" style="height: 50px;">
     </a>
     <button class="menu-toggle" id="menu-toggle">
-      <i class="fas fa-bars">☰</i>
+      <i class="fas fa-bars"></i>
     </button>
     <nav class="nav-links" id="nav-links">
       <a href="./index.html">Home</a>
@@ -17,21 +17,17 @@
           <a href="./ock.html">OCK</a>
         </div>
       </div>
-<!--    
       <div class="dropdown">
-        <a href="#">Events <i class="fas fa-chevron-down"></i></a>
+        <a href="#">Councils<i class="fas fa-chevron-down"></i></a>
         <div class="dropdown-content">
-          <a href="national_council.html">National Council</a>
-          <a href="central_councils.html">Central Council</a>
-          <a href="international.html">International</a>
+          <a href="./area_councils.html">Area Council</a>
+          <a href="./central_council.html">Central Council</a>
+          <a href="https://ssvpindia.in" target="_blank">National Council</a>
         </div>
       </div>
-      <a href="activities.html">Activities</a>
-      <a href="reports.html">Reports</a>
-      <a href="gallery.html">Gallery</a>
--->
-      <a href="contact.html">Contact</a>
-      <a href="contact.html" class="btn btn-primary" style="padding: 0.5rem 1.5rem; color: white;">Donate</a>
+      <a href="./forms.html">Forms</a>
+      <a href="./contact.html">Contact</a>
+      <!-- <a href="./contact.html" class="btn btn-primary" style="padding: 0.5rem 1.5rem; color: white;">Donate</a> -->
     </nav>
   </div>
 `,v=`

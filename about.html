@@ -52,6 +52,18 @@
             background: var(--secondary);
             margin-top: 0.5rem;
         }
+
+        .founder-image-col {
+            position: sticky;
+            top: 100px;
+        }
+
+        @media (max-width: 768px) {
+            .founder-image-col {
+                position: static;
+                top: auto;
+            }
+        }
     </style>
   <script type="module" crossorigin src="./assets/main.js"></script>
   <link rel="stylesheet" crossorigin href="./assets/main.css">
@@ -76,10 +88,9 @@
         <!-- Founder Section -->
         <section class="section">
             <div class="container">
-                <div
-                    style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 4rem; align-items: start;">
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 4rem; align-items: start;">
                     <!-- Left Column: Image -->
-                    <div style="position: sticky; top: 100px;">
+                    <div class="founder-image-col">
                         <img src="images/Frederic-Ozanam.jpg" alt="Blessed Frederic Ozanam"
                             style="border-radius: 12px; box-shadow: 0 20px 40px rgba(0,0,0,0.15); width: 100%; margin-bottom: 2rem;">
 
