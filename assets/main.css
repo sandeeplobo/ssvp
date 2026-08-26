@@ -344,7 +344,7 @@ h3 {
     position: relative;
     display: flex;
     align-items: center;
-    background: linear-gradient(#003366d9, #003366b3), url(./images/photo-1593113598332-cd288d649433.jpg) center/cover no-repeat;
+    background: linear-gradient(#003366d9, #003366b3), url(/images/photo-1593113598332-cd288d649433.jpg) center/cover no-repeat;
     color: var(--white);
     padding-top: 80px
 }
@@ -361,6 +361,33 @@ h3 {
 }
 
 .hero p {
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+    opacity: .9
+}
+
+.shanti_banner {
+    height: 100vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    background: linear-gradient(#003366d9, #003366b3), url(/images/sb_all_residents_and_committee.jpg) center/cover no-repeat;
+    color: var(--white);
+    padding-top: 80px
+}
+
+.shanti_banner-content {
+    max-width: 700px
+}
+
+.shanti_banner h1 {
+    color: var(--white);
+    margin-bottom: 1.5rem;
+    font-size: 3.5rem;
+    line-height: 1.1
+}
+
+.shanti_banner p {
     font-size: 1.25rem;
     margin-bottom: 2rem;
     opacity: .9
