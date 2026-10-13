@@ -25,6 +25,7 @@
           <a href="https://ssvpindia.in" target="_blank">National Council</a>
         </div>
       </div>
+      <a href="./news.html">News</a>
       <a href="./forms.html">Forms</a>
       <a href="./contact.html">Contact</a>
       <!-- <a href="./contact.html" class="btn btn-primary" style="padding: 0.5rem 1.5rem; color: white;">Donate</a> -->
@@ -42,7 +43,8 @@
         <ul class="footer-links">
           <li><a href="./index.html">Home</a></li>
           <li><a href="./about.html">About Us</a></li>
-          <li><a href="./projects.htm">Projects</a></li>
+          <li><a href="./projects.html">Projects</a></li>
+          <li><a href="./news.html">News</a></li>
           <li><a href="./contact.html">Contact</a></li>
         </ul>
       </div>
